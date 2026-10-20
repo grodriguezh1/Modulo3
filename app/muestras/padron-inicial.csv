@@ -1,0 +1,7 @@
+id_empleado;legajo;nombre;sector;area;gerencia;sigla;centro_costo;fecha_alta;fecha_baja
+E01001;1001;Usuario de prueba GRH;Infraestructura;Sistemas;Tecnologia;GRH;CC100;2015-03-01;
+E01002;1002;Perez, Juan;Ventas Norte;Comercial;Comercial;JPE;CC200;2018-06-15;
+E01003;1003;Gomez, Ana;Mesa de Ayuda;Sistemas;Tecnologia;AGO;CC100;2020-01-10;
+E01004;1004;Lopez, Maria;Operaciones;Operaciones;Operaciones;MLO;CC300;2019-09-01;
+E01005;1005;Diaz, Carlos;Desarrollo;Sistemas;Tecnologia;CDI;CC100;2012-04-01;2026-09-30
+E01006;1006;Fernandez, Laura;Logistica;Operaciones;Operaciones;LFE;CC310;2021-02-01;

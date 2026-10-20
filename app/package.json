@@ -1,0 +1,17 @@
+{
+  "name": "asignacion-celulares",
+  "version": "1.0.0",
+  "description": "PRD-001 V3 - Asignacion de celulares y lineas",
+  "type": "module",
+  "private": true,
+  "engines": { "node": ">=22.13" },
+  "scripts": {
+    "start": "node --disable-warning=ExperimentalWarning src/index.js",
+    "seed": "node --disable-warning=ExperimentalWarning scripts/seed.js",
+    "test": "node --disable-warning=ExperimentalWarning --test test/*.test.js"
+  },
+  "dependencies": {
+    "exceljs": "4.4.0",
+    "express": "4.21.2"
+  }
+}

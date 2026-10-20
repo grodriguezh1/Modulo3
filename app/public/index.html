@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Asignacion de celulares</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <section id="login" class="login" hidden>
+    <form id="form-login" class="tarjeta">
+      <h1>Asignacion de celulares</h1>
+      <p class="sutil">Ingrese con su sigla (empleados activos del area Sistemas).</p>
+      <label>Sigla <input name="sigla" autocomplete="username" required autofocus maxlength="10"></label>
+      <button type="submit">Ingresar</button>
+      <p id="login-error" class="error" role="alert"></p>
+    </form>
+  </section>
+
+  <section id="app" hidden>
+    <header class="barra">
+      <strong>Asignacion de celulares</strong>
+      <nav id="pestanas">
+        <button data-vista="celulares">Celulares</button>
+        <button data-vista="lineas">Lineas</button>
+        <button data-vista="asignaciones">Asignaciones</button>
+        <button data-vista="empleados">Padron</button>
+        <button data-vista="auditoria">Historial de cambios</button>
+        <button data-vista="interfaz">Interfaz RRHH</button>
+      </nav>
+      <span class="usuario"><span id="usuario"></span> <button id="salir" class="link">Salir</button></span>
+    </header>
+
+    <main>
+      <div id="herramientas" class="herramientas"></div>
+      <div id="contenido"></div>
+    </main>
+  </section>
+
+  <dialog id="dialogo">
+    <form method="dialog" id="form-dialogo">
+      <h2 id="dialogo-titulo"></h2>
+      <div id="dialogo-cuerpo"></div>
+      <p id="dialogo-error" class="error" role="alert"></p>
+      <div class="acciones">
+        <button type="button" value="cancelar" class="secundario" id="dialogo-cancelar">Cancelar</button>
+        <button type="submit" id="dialogo-aceptar">Guardar</button>
+      </div>
+    </form>
+  </dialog>
+
+  <div id="aviso" class="aviso" role="status" hidden></div>
+  <script src="app.js" type="module"></script>
+</body>
+</html>
